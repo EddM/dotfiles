@@ -1,7 +1,7 @@
 {
-
   "after-scripts": [
-    "brew linkapps"
+    "brew linkapps",
+    "./scripts/initialize-ruby.sh"
   ],
 
   "casks": [
@@ -89,5 +89,4 @@
     "git/.*": "~",
     "ruby/.*": "~"
   }
-
 }

@@ -1,0 +1,14 @@
+{
+  "com.apple.desktopservices": {
+    "DSDontWriteNetworkStores": true
+  },
+  "com.apple.finder": {
+    "FXArrangeGroupViewBy": "Name",
+    "FXDefaultSearchScope": "SCcf",
+    "FXPreferredGroupBy": "Name",
+    "FXPreferredViewStyle": "Nlsv",
+  },
+  "com.iconfactor.mac.xScope": {
+    "generalShowDockIcon": false
+  }
+}
