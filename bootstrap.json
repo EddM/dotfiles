@@ -1,4 +1,8 @@
 {
+  "before-scripts": [
+    "brew tap caskroom/versions"
+  ],
+
   "after-scripts": [
     "brew linkapps",
     "./scripts/initialize-ruby.sh"
@@ -13,6 +17,7 @@
     "flux",
     "google-chrome",
     "firefox",
+    "firefoxdeveloperedition",
     "flash",
     "java",
     "adobe-creative-cloud",
