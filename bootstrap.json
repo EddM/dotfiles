@@ -1,0 +1,99 @@
+{
+
+  "after-scripts": [
+    "brew linkapps"
+  ],
+
+  "casks": [
+    "dropbox",
+    "skype",
+    "sublime-text",
+    "alfred",
+    "omnifocus",
+    "flux",
+    "google-chrome",
+    "firefox",
+    "flash", // :(
+    "java",
+    "adobe-creative-cloud",
+    "gitx",
+    "heroku-toolbelt",
+    "hipchat",
+    "spotify",
+    "transmission",
+    "transmit",
+    "backblaze",
+    "handbrake",
+    "virtualbox",
+    "vlc",
+    "steam",
+    "minecraft",
+    "appcleaner"
+  ],
+
+  "dependencies": { },
+
+  "formulas": [
+    // essentials
+    "autoconf",
+    "git",
+    "autojump",
+    "wget",
+    "caskroom/cask/brew-cask",
+
+    // image processing
+    "jpeg",
+    "libtiff",
+    "freetype",
+    "ghostscript",
+    "libgphoto2",
+    "libicns",
+    "libpng",
+    "imagemagick",
+    "gd",
+    "optipng",
+    "pngcrush",
+
+    // services
+    "memcached",
+    "mysql",
+    "redis",
+
+    // dev
+    "node",
+    "readline",
+    "libxml2",
+    "rbenv",
+    "ruby-build",
+    "libusb",
+    "libusb-compat",
+    "libevent",
+    "python",
+    "python3",
+
+    // network
+    "nmap",
+    "openssl",
+    "ddclient",
+
+    // media
+    "libogg",
+    "ffmpeg",
+    "libvorbis",
+    "faac",
+    "lame",
+    "xvid",
+    "x264",
+
+    // other
+    "chromedriver"
+  ],
+
+  "icons": { },
+
+  "symlinks": {
+    "bash/.*": "~",
+    "git/.*": "~"
+  }
+
+}

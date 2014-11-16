@@ -1,0 +1,12 @@
+[user]
+  name = EddM
+  email = eddm@me.com
+[core]
+  excludesfile = ~/.gitignore
+[push]
+  default = matching
+[color]
+  ui = true
+[filter "media"]
+  clean = git-media-clean %f
+  smudge = git-media-smudge %f
