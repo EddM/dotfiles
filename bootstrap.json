@@ -64,8 +64,6 @@
     "libusb",
     "libusb-compat",
     "libevent",
-    "python",
-    "python3",
 
     "nmap",
     "openssl",
