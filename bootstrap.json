@@ -34,14 +34,12 @@
   "dependencies": { },
 
   "formulas": [
-    // essentials
     "autoconf",
     "git",
     "autojump",
     "wget",
     "caskroom/cask/brew-cask",
 
-    // image processing
     "jpeg",
     "libtiff",
     "freetype",
@@ -54,12 +52,10 @@
     "optipng",
     "pngcrush",
 
-    // services
     "memcached",
     "mysql",
     "redis",
 
-    // dev
     "node",
     "readline",
     "libxml2",
@@ -71,12 +67,10 @@
     "python",
     "python3",
 
-    // network
     "nmap",
     "openssl",
     "ddclient",
 
-    // media
     "libogg",
     "ffmpeg",
     "libvorbis",
@@ -85,7 +79,6 @@
     "xvid",
     "x264",
 
-    // other
     "chromedriver"
   ],
 
