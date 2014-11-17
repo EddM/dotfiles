@@ -11,7 +11,7 @@
   "casks": [
     "dropbox",
     "skype",
-    "sublime-text",
+    "sublime-text3",
     "alfred",
     "omnifocus",
     "flux",
