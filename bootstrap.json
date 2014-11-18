@@ -33,7 +33,8 @@
     "vlc",
     "steam",
     "minecraft",
-    "appcleaner"
+    "appcleaner",
+    "google-hangouts"
   ],
 
   "dependencies": { },
@@ -44,6 +45,7 @@
     "autojump",
     "wget",
     "caskroom/cask/brew-cask",
+    "qt",
 
     "jpeg",
     "libtiff",
