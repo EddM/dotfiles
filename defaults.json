@@ -4,9 +4,8 @@
   },
   "com.apple.finder": {
     "FXArrangeGroupViewBy": "Name",
-    "FXDefaultSearchScope": "SCcf",
     "FXPreferredGroupBy": "Name",
-    "FXPreferredViewStyle": "Nlsv",
+    "FXPreferredViewStyle": "Nlsv"
   },
   "com.iconfactor.mac.xScope": {
     "generalShowDockIcon": false

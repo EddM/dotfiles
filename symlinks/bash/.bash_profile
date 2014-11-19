@@ -97,3 +97,6 @@ export TEST_ENV_NUMBER=10
 
 # ????
 export SSL_CERT_FILE=/usr/local/opt/curl-ca-bundle/share/ca-bundle.crt
+
+# for homebrew/cask (install into /Applications)
+export HOMEBREW_CASK_OPTS="--appdir=/Applications"

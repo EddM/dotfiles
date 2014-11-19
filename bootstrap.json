@@ -1,6 +1,7 @@
 {
   "before-scripts": [
-    "brew tap caskroom/versions"
+    "brew tap caskroom/versions",
+    "export HOMEBREW_CASK_OPTS=\"--appdir=/Applications\""
   ],
 
   "after-scripts": [
@@ -32,7 +33,6 @@
     "virtualbox",
     "vlc",
     "steam",
-    "minecraft",
     "appcleaner",
     "google-hangouts"
   ],
