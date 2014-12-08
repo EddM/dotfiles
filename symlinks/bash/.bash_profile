@@ -96,7 +96,7 @@ export TEST_ENV_NUMBER=10
 [[ -s `brew --prefix`/etc/autojump.sh ]] && . `brew --prefix`/etc/autojump.sh
 
 # ????
-export SSL_CERT_FILE=/usr/local/opt/curl-ca-bundle/share/ca-bundle.crt
+#export SSL_CERT_FILE=/usr/local/opt/curl-ca-bundle/share/ca-bundle.crt
 
 # for homebrew/cask (install into /Applications)
 export HOMEBREW_CASK_OPTS="--appdir=/Applications"

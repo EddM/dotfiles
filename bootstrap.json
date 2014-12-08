@@ -11,6 +11,7 @@
 
   "casks": [
     "dropbox",
+    "1password",
     "skype",
     "sublime-text3",
     "alfred",
@@ -72,6 +73,7 @@
     "libusb",
     "libusb-compat",
     "libevent",
+    "pow",
 
     "nmap",
     "openssl",
