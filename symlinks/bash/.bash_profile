@@ -49,6 +49,10 @@ gcp() {
   git push;
 }
 
+gp() {
+  git pull;
+}
+
 find_git_branch() {
   # Based on: http://stackoverflow.com/a/13003854/170413
   local branch
@@ -100,3 +104,6 @@ export TEST_ENV_NUMBER=10
 
 # for homebrew/cask (install into /Applications)
 export HOMEBREW_CASK_OPTS="--appdir=/Applications"
+
+### Added by the Heroku Toolbelt
+export PATH="/usr/local/heroku/bin:$PATH"
