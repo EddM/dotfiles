@@ -14,6 +14,7 @@
     "1password",
     "skype",
     "sublime-text3",
+    "macvim",
     "alfred",
     "omnifocus",
     "flux",
@@ -37,9 +38,9 @@
     "origin",
     "stellarium",
     "appcleaner",
-    "google-hangouts",
     "sequel-pro",
-    "unrarx"
+    "unrarx",
+    "pgadmin3"
   ],
 
   "dependencies": { },
@@ -51,6 +52,7 @@
     "wget",
     "caskroom/cask/brew-cask",
     "qt",
+    "p7zip",
 
     "jpeg",
     "libtiff",
@@ -67,6 +69,7 @@
     "memcached",
     "mysql",
     "redis",
+    "sqlite",
 
     "node",
     "libxml2",
@@ -79,13 +82,15 @@
 
     "nmap",
     "openssl",
+    "ssh-copy-id",
     "ddclient",
 
     "libogg",
     "ffmpeg",
     "libvorbis",
 
-    "chromedriver"
+    "chromedriver",
+    "blueutil"
   ],
 
   "icons": { },
