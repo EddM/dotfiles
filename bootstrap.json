@@ -6,7 +6,8 @@
 
   "after-scripts": [
     "brew linkapps",
-    "./scripts/initialize-ruby.sh"
+    "./scripts/initialize-ruby.sh",
+    "./scripts/initialize-vim.sh"
   ],
 
   "casks": [

@@ -1,13 +1,35 @@
 {
+  "NSGlobalDomain": {
+    "AppleShowScrollBars": "Automatic",
+    "NSNavPanelExpandedStateForSaveMode": true,
+    "NSNavPanelExpandedStateForSaveMode2": true,
+    "NSDocumentSaveNewDocumentsToCloud": false
+  },
+
   "com.apple.desktopservices": {
     "DSDontWriteNetworkStores": true
   },
   "com.apple.finder": {
     "FXArrangeGroupViewBy": "Name",
     "FXPreferredGroupBy": "Name",
-    "FXPreferredViewStyle": "Nlsv"
+    "FXPreferredViewStyle": "Nlsv",
+    "ShowStatusBar": true,
+    "FXEnableExtensionChangeWarning": false,
+    "WarnOnEmptyTrash": false
   },
   "com.iconfactor.mac.xScope": {
     "generalShowDockIcon": false
+  },
+  "com.apple.dock": {
+    "tilesize": 35,
+    "mineffect": "scale",
+    "dashboard-in-overlay": true
+  },
+  "com.apple.dashboard": {
+    "mcx-disabled": true
+  },
+  "com.apple.Safari": {
+    "ShowFullURLInSmartSearchField": true,
+    "HomePage": "about:blank"
   }
 }
