@@ -7,6 +7,7 @@
 # mv User ~/Dropbox/Misc/Sublime\ Text\ 3/
 # ln -s ~/Dropbox/Misc/Sublime\ Text\ 3/User
 
+subl
 cd ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/
 rm -r User
 ln -s ~/Dropbox/Misc/Sublime\ Text\ 3/User
