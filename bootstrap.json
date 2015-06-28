@@ -12,6 +12,11 @@
     "osascript ./scripts/initialize-terminal.applescript"
   ],
 
+  "taps": [
+    "caskroom/cask",
+    "caskroom/fonts"
+  ],
+
   "casks": [
     "dropbox",
     "1password",
@@ -43,7 +48,10 @@
     "appcleaner",
     "sequel-pro",
     "unrarx",
-    "pgadmin3"
+    "pgadmin3",
+
+    "font-droid-sans-mono",
+    "font-droid-sans-mono-for-powerline"
   ],
 
   "dependencies": { },
