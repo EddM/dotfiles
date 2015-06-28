@@ -6,9 +6,9 @@
   ],
 
   "after-scripts": [
-    "brew linkapps",
     "./scripts/initialize-ruby.sh",
     "./scripts/initialize-vim.sh",
+    "./scripts/initialize-sublime-text.sh",
     "osascript ./scripts/initialize-terminal.applescript"
   ],
 
