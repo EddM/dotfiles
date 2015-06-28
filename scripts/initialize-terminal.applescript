@@ -1,8 +1,6 @@
 tell application "Terminal"
   local allOpenedWindows
-  local initialOpenedWindows
   local windowID
-  set initialOpenedWindows to id of every window
 
   do shell script "open 'etc/EddTerm.terminal'"
   delay 1
