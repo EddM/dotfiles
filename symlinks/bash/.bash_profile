@@ -94,8 +94,6 @@ export PATH=/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:$HOME/.rbenv/shims:$HOM
 export PS1="\n\w\[$txtylw\]\$git_branch\[$txtred\]\$git_dirty\[$txtrst\] \[\033[0;32m\]→ \[\033[00m\] "
 eval "$(rbenv init -)"
 
-export TEST_ENV_NUMBER=10
-
 # Autojump
 [[ -s `brew --prefix`/etc/autojump.sh ]] && . `brew --prefix`/etc/autojump.sh
 
