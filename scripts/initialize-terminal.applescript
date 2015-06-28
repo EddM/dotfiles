@@ -11,10 +11,6 @@ tell application "Terminal"
 
   set allOpenedWindows to id of every window
   repeat with windowID in allOpenedWindows
-    if initialOpenedWindows does not contain windowID then
-      close (every window whose id is windowID) without saving
-    else
-      set current settings of tabs of (every window whose id is windowID) to settings set "EddTerm"
-    end if
+    set current settings of tabs of (every window whose id is windowID) to settings set "EddTerm"
   end repeat
 end tell
