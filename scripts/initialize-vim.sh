@@ -4,4 +4,3 @@
 
 vim +PluginInstall +qall
 mvim +PluginInstall +qall
-killall mvim
