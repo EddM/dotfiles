@@ -23,7 +23,8 @@
   "com.apple.dock": {
     "tilesize": 35,
     "mineffect": "scale",
-    "dashboard-in-overlay": true
+    "dashboard-in-overlay": true,
+    "autohide-delay": 0
   },
   "com.apple.dashboard": {
     "mcx-disabled": true
