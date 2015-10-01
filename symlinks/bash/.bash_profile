@@ -87,7 +87,7 @@ alias s='subl'
 alias grep='grep --color -n -A 1 -B 1'
 alias be='bundle exec '
 
-PROMPT_COMMAND="${PROMPT_COMMAND:+$PROMPT_COMMAND }; find_git_branch; find_git_dirty"
+PROMPT_COMMAND="${PROMPT_COMMAND:+$PROMPT_COMMAND}; find_git_branch; find_git_dirty"
 
 export EDITOR="subl -w"
 export PATH=/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:$HOME/.rbenv/shims:$HOME/.rbenv/bin:$PATH
