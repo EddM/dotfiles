@@ -105,3 +105,5 @@ export HOMEBREW_CASK_OPTS="--appdir=/Applications"
 
 ### Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
+
+export TEST_RETRY_COUNT=0
