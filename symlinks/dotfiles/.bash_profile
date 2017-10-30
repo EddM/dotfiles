@@ -87,18 +87,15 @@ alias s='subl'
 alias grep='grep --color -n -A 1 -B 1'
 alias be='bundle exec '
 
-PROMPT_COMMAND="${PROMPT_COMMAND:+$PROMPT_COMMAND}; find_git_branch; find_git_dirty"
+export PROMPT_COMMAND="$PROMPT_COMMAND find_git_branch; find_git_dirty"
 
-export EDITOR="subl -w"
+export EDITOR="nvim"
 export PATH=/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:$HOME/.rbenv/shims:$HOME/.rbenv/bin:$PATH
 export PS1="\n\w\[$txtylw\]\$git_branch\[$txtred\]\$git_dirty\[$txtrst\] \[\033[0;32m\]→ \[\033[00m\] "
 eval "$(rbenv init -)"
 
 # Autojump
 [[ -s `brew --prefix`/etc/autojump.sh ]] && . `brew --prefix`/etc/autojump.sh
-
-# ????
-#export SSL_CERT_FILE=/usr/local/opt/curl-ca-bundle/share/ca-bundle.crt
 
 # for homebrew/cask (install into /Applications)
 export HOMEBREW_CASK_OPTS="--appdir=/Applications"

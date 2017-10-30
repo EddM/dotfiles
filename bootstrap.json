@@ -5,52 +5,46 @@
     "export HOMEBREW_CASK_OPTS=\"--appdir=/Applications\""
   ],
 
-  "after-scripts": [
-    "./scripts/initialize-ruby.sh",
-    "./scripts/initialize-vim.sh",
-    "./scripts/initialize-sublime-text.sh",
-    "osascript ./scripts/initialize-terminal.applescript"
-  ],
-
   "taps": [
     "caskroom/cask",
     "caskroom/fonts"
   ],
 
   "casks": [
-    "dropbox",
     "1password",
     "little-snitch",
     "skype",
     "sublime-text3",
-    "macvim",
     "alfred",
-    "omnifocus",
-    "flux",
     "google-chrome",
     "firefox",
     "firefoxdeveloperedition",
-    "flash",
     "java",
-    "adobe-creative-cloud",
-    "gitx",
     "heroku-toolbelt",
     "slack",
+    "sketch",
+    "iconjar",
     "transmission",
     "transmit",
     "backblaze",
     "handbrake",
     "virtualbox",
-    "zerotier-one",
     "vlc",
     "steam",
     "origin",
+    "minecraft",
     "stellarium",
     "appcleaner",
+    "google-backup-and-sync",
     "sequel-pro",
     "unrarx",
     "pgadmin3",
+    "tunnelbear",
+    "iterm2",
+    "anki",
+    "dash",
 
+    "font-inconsolata",
     "font-droid-sans-mono",
     "font-droid-sans-mono-for-powerline"
   ],
@@ -65,6 +59,8 @@
     "caskroom/cask/brew-cask",
     "qt",
     "p7zip",
+    "neovim",
+    "tmux",
 
     "jpeg",
     "libtiff",
@@ -83,6 +79,7 @@
     "redis",
     "sqlite",
     "postgres",
+    "elasticsearch",
 
     "node",
     "libxml2",
@@ -98,21 +95,23 @@
     "openssl",
     "ssh-copy-id",
     "ddclient",
+    "mosh",
 
     "libogg",
     "ffmpeg",
     "libvorbis",
 
     "chromedriver",
-    "blueutil"
+    "blueutil",
+
+    "docker",
+    "docker-machine",
+    "docker-compose"
   ],
 
   "icons": { },
 
   "symlinks": {
-    "bash/.*": "~",
-    "git/.*": "~",
-    "ruby/.*": "~",
-    "vim/.*": "~"
+    "dotfiles/.*": "~",
   }
 }
