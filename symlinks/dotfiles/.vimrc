@@ -93,5 +93,3 @@ inoremap <C-t>  <Esc>:tabnew<CR>i
 nnoremap <C-k>  :tabclose<CR>
 inoremap <C-k>  <Esc>:tabclose<CR>i
 
-" Remap JJ to esc
-inoremap jk <Esc>`^

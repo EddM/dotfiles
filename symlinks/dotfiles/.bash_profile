@@ -94,8 +94,10 @@ export PATH=/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:$HOME/.rbenv/shims:$HOM
 export PS1="\n\w\[$txtylw\]\$git_branch\[$txtred\]\$git_dirty\[$txtrst\] \[\033[0;32m\]→ \[\033[00m\] "
 eval "$(rbenv init -)"
 
-# Autojump
-[[ -s `brew --prefix`/etc/autojump.sh ]] && . `brew --prefix`/etc/autojump.sh
+if [ "$(uname)" == "Darwin" ]; then
+  # Autojump
+  [[ -s `brew --prefix`/etc/autojump.sh ]] && . `brew --prefix`/etc/autojump.sh
+fi
 
 # for homebrew/cask (install into /Applications)
 export HOMEBREW_CASK_OPTS="--appdir=/Applications"
