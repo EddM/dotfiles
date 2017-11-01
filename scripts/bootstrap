@@ -99,13 +99,13 @@ link_file () {
 
 install_dotfiles () {
   info 'installing dotfiles'
-
+  dotfiles_dir="$DOTFILES_ROOT/symlinks/dotfiles"
   local overwrite_all=false backup_all=false skip_all=false
 
-  for src in $(find -H "$DOTFILES_ROOT/symlinks/dotfiles" -maxdepth 5 -name '*.*' -not -path '*.git*' -type f)
+  for src in $(find -H "$dotfiles_dir" -maxdepth 5 -name '*.*' -not -path '*.git*' -type f)
   do
-    dst="$HOME/$(basename "$src")"
-    mkdir -p "$(dirname "$src")"
+    dst="$HOME${src/$dotfiles_dir/}"
+    mkdir -p "$(dirname "$dst")"
     link_file "$src" "$dst"
   done
 }
