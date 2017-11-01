@@ -23,6 +23,11 @@ set smarttab
 filetype plugin on
 filetype indent on
 
+" Set up plugins
+if filereadable(expand("~/.vimrc.plugins"))
+  source ~/.vimrc.bundles
+endif
+
 """"""""
 if has('autocmd')
   filetype plugin indent on
