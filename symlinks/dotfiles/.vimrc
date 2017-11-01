@@ -30,7 +30,7 @@ filetype indent on
 
 " Set up plugins
 if filereadable(expand("~/.vimrc.plugins"))
-  source ~/.vimrc.bundles
+  source ~/.vimrc.plugins
 endif
 
 """"""""
