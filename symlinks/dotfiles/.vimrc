@@ -20,6 +20,10 @@ set noswapfile
 set autoindent
 set smartindent
 set smarttab
+set tabstop=2
+set softtabstop=0
+set expandtab
+set shiftwidth=2
 
 filetype plugin on
 filetype indent on
