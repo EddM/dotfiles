@@ -7,6 +7,20 @@ Plug 'tpope/vim-rails'
 Plug 'pangloss/vim-javascript'
 Plug 'ctrlpvim/ctrlp.vim'
 Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
+Plug 'tpope/vim-fugitive'
 
 " Initialize plugin system
 call plug#end()
+
+" NERDtree
+autocmd vimenter * NERDTree
+autocmd bufenter * if(winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
+nmap <Leader>k :NERDTreeToggle<CR>
+nmap <Leader>K :NERDTreeFocus<CR>
+
+" Airline
+let g:airline#extensions#tabline#enabled = 0
+let g:airline_section_x = ''
+let g:airline_section_y = ''

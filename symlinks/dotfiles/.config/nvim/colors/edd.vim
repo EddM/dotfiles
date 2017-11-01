@@ -1,5 +1,3 @@
-" Vim color file
-" Converted from Textmate theme Base16 Ocean Dark using Coloration v0.4.0 (http://github.com/sickill/coloration)
 
 "set background=dark
 highlight clear
@@ -8,7 +6,7 @@ if exists("syntax_on")
   syntax reset
 endif
 
-let g:colors_name = "Base16 Ocean Dark"
+let g:colors_name = "Edd's Theme"
 
 hi Cursor ctermfg=16 ctermbg=15 cterm=NONE guifg=#14161b guibg=#ffffff gui=NONE
 hi Visual ctermfg=NONE ctermbg=17 cterm=NONE guifg=NONE guibg=#272e33 gui=NONE

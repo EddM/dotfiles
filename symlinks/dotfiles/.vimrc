@@ -5,8 +5,8 @@ filetype off
 
 set number
 set history=1000
-set showcmd
-set showmode
+set noshowcmd
+set noshowmode
 set visualbell
 set hidden
 set background=dark
