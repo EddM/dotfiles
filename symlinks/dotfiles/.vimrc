@@ -10,6 +10,7 @@ set showmode
 set visualbell
 set hidden
 set background=dark
+set laststatus=0
 let g:colors_name='edd'
 syntax on
 
