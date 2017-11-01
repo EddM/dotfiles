@@ -102,7 +102,7 @@ install_dotfiles () {
   dotfiles_dir="$DOTFILES_ROOT/symlinks/dotfiles"
   local overwrite_all=false backup_all=false skip_all=false
 
-  for src in $(find -H "$dotfiles_dir" -maxdepth 5 -name '*.*' -not -path '*.git*' -type f)
+  for src in $(find -H "$dotfiles_dir" -maxdepth 5 -name '*.*' -type f)
   do
     dst="$HOME${src/$dotfiles_dir/}"
     mkdir -p "$(dirname "$dst")"
