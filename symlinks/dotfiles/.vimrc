@@ -51,6 +51,9 @@ endif
 " Find
 map <C-f> /
 
+" comma as leader
+let mapleader=","
+
 " indent / deindent after selecting the text with (⇧ v), (.) to repeat.
 vnoremap <Tab> >
 vnoremap <S-Tab> <
