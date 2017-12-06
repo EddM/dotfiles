@@ -13,6 +13,7 @@ PROMPT="\n$reset_color -"
 plugins=(
   git
   autojump
+  tmux
 )
 
 source $ZSH/oh-my-zsh.sh
