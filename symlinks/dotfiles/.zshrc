@@ -17,6 +17,8 @@ plugins=(
 
 source $ZSH/oh-my-zsh.sh
 
+zmodload zsh/complist
+
 # User configuration
 export EDITOR='nvim'
 export TEST_RETRY_COUNT=0
@@ -26,5 +28,7 @@ alias be='bundle exec '
 alias grep='grep --color -n -A 1 -B 1'
 alias ls='ls -Gpa'
 
+bindkey '^[[Z' reverse-menu-complete
+bindkey -M menuselect '^M' .accept-line
 
 eval "$(rbenv init - --no-rehash)"
