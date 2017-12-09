@@ -25,6 +25,8 @@ set softtabstop=0
 set expandtab
 set shiftwidth=2
 
+let mapleader=";"
+
 filetype plugin on
 filetype indent on
 
@@ -51,9 +53,6 @@ endif
 " Find
 map <C-f> /
 
-" comma as leader
-let mapleader=","
-
 " indent / deindent after selecting the text with (⇧ v), (.) to repeat.
 vnoremap <Tab> >
 vnoremap <S-Tab> <
@@ -73,7 +72,7 @@ vmap <C-v> p
 vmap <C-c> y
 
 " Undo, Redo (broken)
-nnoremap <C-z>  :undo<CR>
+nnoremap <C-z> :undo<CR>
 inoremap <C-z>  <Esc>:undo<CR>
 nnoremap <C-y>  :redo<CR>
 inoremap <C-y>  <Esc>:redo<CR>
