@@ -6,7 +6,7 @@ export ZSH=~/.oh-my-zsh
 
 ZSH_THEME="edd"
 
-DISABLE_AUTO_TITLE="true"
+DISABLE_AUTO_TITLE="false"
 COMPLETION_WAITING_DOTS="true"
 PROMPT="\n$reset_color -"
 
