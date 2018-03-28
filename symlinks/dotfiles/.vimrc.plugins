@@ -21,6 +21,7 @@ autocmd bufenter * if(winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTa
 nmap <Leader>K :NERDTreeToggle<CR>
 nmap <Leader>k :NERDTreeFocus<CR>
 let NERDTreeShowHidden = 1
+let g:NERDTreeWinPos = "right"
 
 " Airline
 let g:airline#extensions#tabline#enabled = 0
