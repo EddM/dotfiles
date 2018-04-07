@@ -32,3 +32,6 @@ let g:airline_section_y = ''
 " NERDcommenter
 let g:NERDSpaceDelims = 1
 let g:NERDTrimTrailingWhitespace = 1
+
+" ctrlp
+let g:ctrlp_show_hidden = 1
