@@ -7,6 +7,7 @@ Plug 'tpope/vim-rails'
 Plug 'pangloss/vim-javascript'
 Plug 'ctrlpvim/ctrlp.vim'
 Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
+Plug 'scrooloose/nerdcommenter'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'tpope/vim-fugitive'
@@ -27,3 +28,7 @@ let g:NERDTreeWinPos = "right"
 let g:airline#extensions#tabline#enabled = 0
 let g:airline_section_x = ''
 let g:airline_section_y = ''
+
+" NERDcommenter
+let g:NERDSpaceDelims = 1
+let g:NERDTrimTrailingWhitespace = 1
