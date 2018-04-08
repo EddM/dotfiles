@@ -11,6 +11,7 @@ set visualbell
 set hidden
 set background=dark
 set laststatus=0
+set cursorline
 let g:colors_name='edd'
 syntax on
 
