@@ -1,4 +1,3 @@
-
 "set background=dark
 highlight clear
 
@@ -8,12 +7,13 @@ endif
 
 let g:colors_name = "Edd's Theme"
 
-hi Cursor ctermfg=16 ctermbg=15 cterm=NONE guifg=#14161b guibg=#ffffff gui=NONE
-hi Visual ctermfg=NONE ctermbg=17 cterm=NONE guifg=NONE guibg=#272e33 gui=NONE
-hi CursorLine ctermfg=NONE ctermbg=16 cterm=NONE guifg=NONE guibg=#27292e gui=NONE
+hi Cursor ctermfg=16 ctermbg=16 cterm=NONE guifg=#14161b guibg=#ffffff gui=NONE
+hi Visual ctermfg=16 ctermbg=255 cterm=NONE guifg=NONE guibg=#272e33 gui=NONE
+hi CursorLine ctermfg=NONE ctermbg=236 cterm=NONE guifg=NONE guibg=#27292e gui=NONE
 hi CursorColumn ctermfg=NONE ctermbg=16 cterm=NONE guifg=NONE guibg=#27292e gui=NONE
 hi ColorColumn ctermfg=NONE ctermbg=16 cterm=NONE guifg=NONE guibg=#27292e gui=NONE
-hi LineNr ctermfg=66 ctermbg=NONE cterm=NONE guifg=#71757c guibg=#27292e gui=NONE
+hi LineNr ctermfg=239 ctermbg=NONE cterm=NONE guifg=#71757c guibg=#27292e gui=NONE
+hi CursorLineNR ctermfg=255 ctermbg=236
 hi VertSplit ctermfg=59 ctermbg=59 cterm=NONE guifg=#4a4d53 guibg=#4a4d53 gui=NONE
 hi MatchParen ctermfg=137 ctermbg=NONE cterm=underline guifg=#a89163 guibg=NONE gui=underline
 hi StatusLine ctermfg=188 ctermbg=59 cterm=bold guifg=#ced3dd guibg=#4a4d53 gui=bold
@@ -28,7 +28,7 @@ hi Folded ctermfg=60 ctermbg=16 cterm=NONE guifg=#65737e guibg=#14161b gui=NONE
 hi Normal guibg=NONE ctermbg=NONE
 hi Boolean ctermfg=173 ctermbg=NONE cterm=NONE guifg=#d08770 guibg=NONE gui=NONE
 hi Character ctermfg=173 ctermbg=NONE cterm=NONE guifg=#d08770 guibg=NONE gui=NONE
-hi Comment ctermfg=60 ctermbg=NONE cterm=NONE guifg=#65737e guibg=NONE gui=NONE
+hi Comment ctermfg=242 ctermbg=NONE cterm=NONE guifg=#65737e guibg=NONE gui=NONE
 hi Conditional ctermfg=137 ctermbg=NONE cterm=NONE guifg=#a89163 guibg=NONE gui=NONE
 hi Constant ctermfg=173 ctermbg=NONE cterm=NONE guifg=#d08770 guibg=NONE gui=NONE
 hi Define ctermfg=137 ctermbg=NONE cterm=NONE guifg=#a89163 guibg=NONE gui=NONE
@@ -51,7 +51,7 @@ hi Special ctermfg=188 ctermbg=NONE cterm=NONE guifg=#ced3dd guibg=NONE gui=NONE
 hi SpecialKey ctermfg=60 ctermbg=16 cterm=NONE guifg=#65737e guibg=#27292e gui=NONE
 hi Statement ctermfg=137 ctermbg=NONE cterm=NONE guifg=#a89163 guibg=NONE gui=NONE
 hi StorageClass ctermfg=139 ctermbg=NONE cterm=NONE guifg=#b48ead guibg=NONE gui=NONE
-hi String ctermfg=144 ctermbg=NONE cterm=NONE guifg=#a3be8c guibg=NONE gui=NONE
+hi String ctermfg=150 ctermbg=NONE cterm=NONE guifg=#a3be8c guibg=NONE gui=NONE
 hi Tag ctermfg=131 ctermbg=NONE cterm=NONE guifg=#bf616a guibg=NONE gui=NONE
 hi Title ctermfg=188 ctermbg=NONE cterm=bold guifg=#ced3dd guibg=NONE gui=bold
 hi Todo ctermfg=60 ctermbg=NONE cterm=inverse,bold guifg=#65737e guibg=NONE gui=inverse,bold
