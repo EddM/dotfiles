@@ -33,6 +33,9 @@ hi Pmenu ctermbg=255 ctermfg=0
 hi PmenuSel ctermbg=190 ctermfg=0
 hi PmenuSbar ctermbg=0
 
+hi ALEErrorSign ctermbg=1 ctermfg=15
+hi ALEWarningSign ctermbg=3 ctermfg=15
+
 hi Normal guibg=NONE ctermbg=NONE
 hi Boolean ctermfg=173 ctermbg=NONE cterm=NONE guifg=#d08770 guibg=NONE gui=NONE
 hi Character ctermfg=173 ctermbg=NONE cterm=NONE guifg=#d08770 guibg=NONE gui=NONE

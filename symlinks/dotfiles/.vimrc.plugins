@@ -13,6 +13,7 @@ Plug 'vim-airline/vim-airline-themes'
 Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-surround'
 Plug 'Shougo/deoplete.nvim'
+Plug 'w0rp/ale'
 
 " Initialize plugin system
 call plug#end()
@@ -39,6 +40,10 @@ let g:NERDTreeWinPos = "right"
 let g:airline#extensions#tabline#enabled = 0
 let g:airline_section_x = ''
 let g:airline_section_y = ''
+
+" ale
+let g:ale_sign_error = '!'
+let g:ale_sign_warning = '?'
 
 " NERDcommenter
 let g:NERDSpaceDelims = 1
