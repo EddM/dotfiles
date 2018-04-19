@@ -25,6 +25,14 @@ hi Search ctermfg=NONE ctermbg=NONE cterm=underline guifg=NONE guibg=NONE gui=un
 hi Directory ctermfg=144 ctermbg=NONE cterm=NONE guifg=#a3be8c guibg=NONE gui=NONE
 hi Folded ctermfg=60 ctermbg=16 cterm=NONE guifg=#65737e guibg=#14161b gui=NONE
 
+hi TabLineFill ctermfg=235 ctermbg=220
+hi TabLine ctermfg=245 ctermbg=235 cterm=NONE
+hi TabLineSel ctermfg=17 ctermbg=190 cterm=NONE
+
+hi Pmenu ctermbg=255 ctermfg=0
+hi PmenuSel ctermbg=190 ctermfg=0
+hi PmenuSbar ctermbg=0
+
 hi Normal guibg=NONE ctermbg=NONE
 hi Boolean ctermfg=173 ctermbg=NONE cterm=NONE guifg=#d08770 guibg=NONE gui=NONE
 hi Character ctermfg=173 ctermbg=NONE cterm=NONE guifg=#d08770 guibg=NONE gui=NONE

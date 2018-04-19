@@ -11,16 +11,27 @@ Plug 'scrooloose/nerdcommenter'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'tpope/vim-fugitive'
+Plug 'tpope/vim-surround'
+Plug 'Shougo/deoplete.nvim'
 
 " Initialize plugin system
 call plug#end()
 
+" deoplete
+let g:deoplete#enable_at_startup = 1
+
 " NERDtree
-autocmd vimenter * NERDTree
 autocmd VimEnter * wincmd p
 autocmd bufenter * if(winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
+" autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
+autocmd StdinReadPre * let s:std_in=1
+autocmd VimEnter * if argc() == 1 && isdirectory(argv()[0]) && !exists("s:std_in") | exe 'NERDTree' argv()[0] | wincmd p | ene | endif
+
 nmap <Leader>K :NERDTreeToggle<CR>
 nmap <Leader>k :NERDTreeFocus<CR>
+
+let NERDTreeDirArrows = 1
+let NERDTreeMinimalUI = 1
 let NERDTreeShowHidden = 1
 let g:NERDTreeWinPos = "right"
 
@@ -34,4 +45,7 @@ let g:NERDSpaceDelims = 1
 let g:NERDTrimTrailingWhitespace = 1
 
 " ctrlp
+let g:ctrlp_custom_ignore = 'node_modules\|DS_Store\|git'
 let g:ctrlp_show_hidden = 1
+let g:ctrlp_working_path_mode='ra'
+let g:ctrlp_cmd = 'CtrlPMixed'
