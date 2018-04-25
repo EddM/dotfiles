@@ -14,6 +14,9 @@ Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-surround'
 Plug 'Shougo/deoplete.nvim'
 Plug 'w0rp/ale'
+Plug 'SirVer/ultisnips'
+Plug 'pangloss/vim-javascript'
+Plug 'mxw/vim-jsx'
 
 " Initialize plugin system
 call plug#end()
@@ -35,6 +38,9 @@ let NERDTreeDirArrows = 1
 let NERDTreeMinimalUI = 1
 let NERDTreeShowHidden = 1
 let g:NERDTreeWinPos = "right"
+
+" snippets
+let g:UltiSnipsSnippetsDir = '~/.vim/UltiSnips'
 
 " Airline
 let g:airline#extensions#tabline#enabled = 0
