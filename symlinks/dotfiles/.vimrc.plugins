@@ -39,9 +39,6 @@ let NERDTreeMinimalUI = 1
 let NERDTreeShowHidden = 1
 let g:NERDTreeWinPos = "right"
 
-" snippets
-let g:UltiSnipsSnippetsDir = '~/.vim/UltiSnips'
-
 " Airline
 let g:airline#extensions#tabline#enabled = 0
 let g:airline_section_x = ''
