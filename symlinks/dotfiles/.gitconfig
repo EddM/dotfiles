@@ -1,6 +1,7 @@
 [user]
 	name = Edd Morgan
   email = eddm@me.com
+	signingkey = FC4755723D3AAA43
 [core]
   excludesfile = ~/.gitignore
 [push]
