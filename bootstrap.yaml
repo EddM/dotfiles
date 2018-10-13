@@ -3,18 +3,20 @@ before-scripts:
 - brew install caskroom/cask/brew-cask
 - brew tap caskroom/versions
 - export HOMEBREW_CASK_OPTS="--appdir=/Applications"
+
+after-scripts:
+- sh ~/.cider/scripts/bootstrap
+
 taps:
 - caskroom/cask
 - caskroom/fonts
+
 casks:
 - 1password
 - skype
-- sublime-text3
+- sublime-text
 - google-chrome
-- firefox
-- firefoxdeveloperedition
 - java
-- heroku-toolbelt
 - slack
 - sketch
 - iconjar
@@ -27,14 +29,15 @@ casks:
 - stellarium
 - appcleaner
 - google-backup-and-sync
-- unrarx
 - pgadmin3
 - iterm2
 - dash
 - font-inconsolata
 - font-droid-sans-mono
 - font-droid-sans-mono-for-powerline
+
 dependencies: {}
+
 formulas:
 - autoconf
 - git
@@ -62,7 +65,7 @@ formulas:
 - sqlite
 - postgres
 - elasticsearch
-- node
+- node@8
 - libxml2
 - rbenv
 - ruby-build
@@ -79,8 +82,7 @@ formulas:
 - libogg
 - ffmpeg
 - libvorbis
-- chromedriver
 - blueutil
+- heroku
+
 icons: {}
-
-
