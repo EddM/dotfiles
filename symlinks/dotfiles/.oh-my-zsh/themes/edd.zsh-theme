@@ -5,5 +5,5 @@ ZSH_THEME_GIT_PROMPT_SUFFIX=""
 ZSH_THEME_GIT_PROMPT_DIRTY=")%{$fg[red]%}*%{$fg[yellow]%} "
 ZSH_THEME_GIT_PROMPT_CLEAN=") "
 
-PROMPT='${NEWLINE}%{$reset_color%}${PWD/#$HOME/~} %{$fg[yellow]%}$(git_prompt_info)%{$fg[green]%}→%{$reset_color%} '
+PROMPT='${NEWLINE}%{$reset_color%}%{$fg[cyan]%}%n@%m:%{$reset_color%} ${PWD/#$HOME/~} %{$fg[yellow]%}$(git_prompt_info)%{$fg[green]%}→%{$reset_color%} '
 
