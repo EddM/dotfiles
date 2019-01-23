@@ -82,7 +82,7 @@ git-clean-orig() {
 alias res='touch tmp/restart.txt'
 alias ls='ls -Gpa'
 alias s='subl'
-alias grep='grep --color -n -A 1 -B 1'
+alias grep='grep --color -n'
 alias be='bundle exec '
 
 export PROMPT_COMMAND="$PROMPT_COMMAND find_git_branch; find_git_dirty"
@@ -104,3 +104,4 @@ export HOMEBREW_CASK_OPTS="--appdir=/Applications"
 export PATH="/usr/local/heroku/bin:$PATH"
 
 export TEST_RETRY_COUNT=0
+export GPG_TTY=$(tty)

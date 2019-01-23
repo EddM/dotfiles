@@ -27,7 +27,7 @@ export TEST_RETRY_COUNT=0
 
 alias res='touch tmp/restart.txt'
 alias be='bundle exec '
-alias grep='grep --color -n -A 1 -B 1'
+alias grep='grep --color -n'
 alias ls='ls -Gpa'
 
 bindkey '^[[Z' reverse-menu-complete
