@@ -83,5 +83,6 @@ formulas:
 - ffmpeg
 - libvorbis
 - blueutil
+- gsl
 
 icons: {}
