@@ -35,6 +35,8 @@ casks:
 - font-inconsolata
 - font-droid-sans-mono
 - font-droid-sans-mono-for-powerline
+- spectacle
+- openemu
 
 dependencies: {}
 
