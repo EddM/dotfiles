@@ -10,26 +10,24 @@ after-scripts:
 taps:
 - caskroom/cask
 - caskroom/fonts
+- AdoptOpenJDK/openjdk
 
 casks:
 - 1password
 - skype
 - sublime-text
 - google-chrome
-- java
+- java8
 - slack
 - sketch
 - iconjar
-- transmission
 - transmit
 - backblaze
 - handbrake
 - virtualbox
 - vlc
-- stellarium
 - appcleaner
 - google-backup-and-sync
-- pgadmin3
 - iterm2
 - dash
 - font-inconsolata
@@ -37,6 +35,8 @@ casks:
 - font-droid-sans-mono-for-powerline
 - spectacle
 - openemu
+- docker
+- adoptopenjdk8-jre
 
 dependencies: {}
 
@@ -71,11 +71,9 @@ formulas:
 - libxml2
 - rbenv
 - ruby-build
-- go
 - libusb
 - libusb-compat
 - libevent
-- pow
 - nmap
 - openssl
 - ssh-copy-id
@@ -85,6 +83,5 @@ formulas:
 - ffmpeg
 - libvorbis
 - blueutil
-- heroku
 
 icons: {}
