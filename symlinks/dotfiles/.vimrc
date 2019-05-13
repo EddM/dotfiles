@@ -8,7 +8,7 @@ set history=1000
 set noshowcmd
 set noshowmode
 set visualbell
-set hidden
+" set hidden
 set background=dark
 set laststatus=0
 set cursorline
@@ -72,3 +72,9 @@ vmap <C-x> d
 vmap <C-v> p
 vmap <C-c> y
 
+" moving between buffers
+nnoremap <Leader>[ :bp<CR>
+nnoremap <Leader>] :bn<CR>
+nnoremap <Leader>g :e#<CR>
+nnoremap <Leader>l :ls<CR>
+nnoremap <Leader>w :bd<CR>
