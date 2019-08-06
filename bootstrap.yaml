@@ -84,5 +84,6 @@ formulas:
 - libvorbis
 - blueutil
 - gsl
+- yarn
 
 icons: {}
