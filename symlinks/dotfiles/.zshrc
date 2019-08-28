@@ -30,6 +30,10 @@ alias be='bundle exec '
 alias grep='grep --color -n'
 alias ls='ls -Gpa'
 
+revlog() {
+  heroku logs --tail -a biggerpockets-staging-pr-$1
+}
+
 bindkey '^[[Z' reverse-menu-complete
 bindkey -M menuselect '^M' .accept-line
 
