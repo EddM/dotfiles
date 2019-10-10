@@ -30,6 +30,10 @@ alias be='bundle exec '
 alias grep='grep --color -n'
 alias ls='ls -Gpa'
 
+revc() {
+  heroku run rails c -a biggerpockets-staging-pr-$1
+}
+
 revlog() {
   heroku logs --tail -a biggerpockets-staging-pr-$1
 }
