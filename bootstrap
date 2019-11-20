@@ -1,7 +1,5 @@
 #!/usr/bin/env bash
 
-DOTFILES_ROOT=$(pwd -P)
-
 set -e
 
 info () {
@@ -131,8 +129,20 @@ setup_nvim () {
   pip3 install --user neovim
 }
 
+load_macos_defaults() {
+  sh ~/.macos
+}
+
+setup_sublime() {
+  cd ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/
+  rm -r User
+  ln -s ~/Google Drive/Misc/Sublime Text 3/User
+}
+
 install_dotfiles
 install_homebrew
 setup_homebrew
 install_ohmyzsh
 setup_nvim
+load_macos_defaults
+setup_sublime
