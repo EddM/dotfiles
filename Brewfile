@@ -72,6 +72,7 @@ cask "steam"
 cask "sublime-text"
 cask "transmit"
 cask "vlc"
+cask "zoomus"
 cask "adoptopenjdk/openjdk/adoptopenjdk8-jre"
 
 mas "Microsoft Excel", id: 462058435
