@@ -97,7 +97,7 @@ install_dotfiles () {
     link_file "$src" "$dst"
   done
 
-  dotdirs=(.config .oh-my-zsh)
+  dotdirs=(.config .oh-my-zsh .homebrew)
 
   for dotdir in "${dotdirs[@]}"
   do
@@ -116,7 +116,7 @@ install_homebrew() {
 }
 
 setup_homebrew() {
-  brew bundle --file=~/Brewfile
+  brew bundle --file=~/.homebrew/Brewfile
 }
 
 install_ohmyzsh() {
