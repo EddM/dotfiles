@@ -116,7 +116,7 @@ install_homebrew() {
 }
 
 setup_homebrew() {
-  brew bundle --file ~/Brewfile
+  brew bundle --file=~/Brewfile
 }
 
 install_ohmyzsh() {
