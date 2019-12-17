@@ -29,6 +29,8 @@ alias res='touch tmp/restart.txt'
 alias be='bundle exec '
 alias grep='grep --color -n'
 alias ls='ls -Gpa'
+alias yab='bundle & yarn &'
+alias fman='foreman start -f Procfile.dev'
 
 revc() {
   heroku run rails c -a biggerpockets-staging-pr-$1
