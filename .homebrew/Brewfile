@@ -3,6 +3,7 @@ cask_args appdir: "/Applications"
 tap "homebrew/core"
 tap "homebrew/bundle"
 tap "homebrew/cask"
+tap "homebrew/cask-fonts"
 tap "heroku/brew"
 tap "adoptopenjdk/openjdk"
 
@@ -75,6 +76,10 @@ cask "transmit"
 cask "vlc"
 cask "zoomus"
 cask "adoptopenjdk/openjdk/adoptopenjdk8-jre"
+
+cask "font-open-sans"
+cask "font-oswald"
+cask "font-inconsolata"
 
 mas "Microsoft Excel", id: 462058435
 mas "Bear", id: 1091189122
