@@ -21,6 +21,8 @@ source $ZSH/oh-my-zsh.sh
 
 zmodload zsh/complist
 
+setopt no_share_history
+
 # User configuration
 export EDITOR='nvim'
 export TEST_RETRY_COUNT=0
