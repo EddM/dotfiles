@@ -1035,6 +1035,8 @@
 	<false/>
 	<key>HotkeyMigratedFromSingleToMulti</key>
 	<true/>
+	<key>IRMemory</key>
+	<integer>4</integer>
 	<key>LoadPrefsFromCustomFolder</key>
 	<true/>
 	<key>NSQuotedKeystrokeBinding</key>
@@ -1080,8 +1082,10 @@
 	</dict>
 	<key>NSWindow Frame NSColorPanel</key>
 	<string>0 135 224 275 0 0 1792 1097 </string>
+	<key>NSWindow Frame SUUpdateAlert</key>
+	<string>586 541 620 392 0 0 1792 1097 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>0 223 1210 874 0 0 1792 1097 </string>
+	<string>0 50 1792 1047 0 0 1792 1097 </string>
 	<key>NeverWarnAboutShortLivedSessions_4863D1B5-AF41-4E53-80B6-E2394218FCD3</key>
 	<true/>
 	<key>NeverWarnAboutShortLivedSessions_4863D1B5-AF41-4E53-80B6-E2394218FCD3_selection</key>
@@ -2477,7 +2481,7 @@
 	<key>NoSyncInstallationId</key>
 	<string>92D61655-2A55-4258-BF80-D812E182A5AF</string>
 	<key>NoSyncLaunchExperienceControllerRunCount</key>
-	<integer>3</integer>
+	<integer>7</integer>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile</key>
 	<true/>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile_selection</key>
@@ -3194,6 +3198,10 @@
 			</dict>
 		</array>
 	</dict>
+	<key>NoSyncSearchHistory2</key>
+	<array>
+		<string>fifty_percent_rule_expenses</string>
+	</array>
 	<key>NoSyncTipOfTheDayEligibilityBeganTime</key>
 	<real>596027594.99866199</real>
 	<key>PinchToChangeFontSizeDisabled</key>
@@ -3242,9 +3250,13 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2019-12-18T19:13:57Z</date>
+	<date>2020-02-05T16:29:23Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
+	<key>SUUpdateRelaunchingMarker</key>
+	<true/>
+	<key>SeparateStatusBarsPerPane</key>
+	<true/>
 	<key>ShowPaneTitles</key>
 	<false/>
 	<key>SoundForEsc</key>

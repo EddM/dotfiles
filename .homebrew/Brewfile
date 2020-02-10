@@ -54,6 +54,8 @@ brew "wget"
 brew "yarn"
 brew "heroku/brew/heroku"
 brew "ctags"
+brew "bastet"
+brew "nsnake"
 
 cask "1password"
 cask "appcleaner"
