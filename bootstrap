@@ -91,7 +91,7 @@ install_dotfiles () {
   info 'installing dotfiles'
   local overwrite_all=false backup_all=false skip_all=false
 
-  for src in $(find -H ~/.dotfiles -maxdepth 1 -type f -name '.*' -o -name 'Brewfile')
+  for src in $(find -H ~/.dotfiles -maxdepth 1 -type f -name '.*')
   do
     dst="$HOME/$(basename $src)"
     link_file "$src" "$dst"
@@ -102,7 +102,7 @@ install_dotfiles () {
   for dotdir in "${dotdirs[@]}"
   do
     fulldotdir=~/.dotfiles/$dotdir
-    for src in $(find -H $fulldotdir -maxdepth 5 -type f -name '*.*')
+    for src in $(find -H $fulldotdir -maxdepth 5 -type f -name '*.*' -o -name 'Brewfile')
     do
       dst="$HOME/$dotdir${src/$fulldotdir/}"
       mkdir -p "$(dirname "$dst")"
