@@ -144,6 +144,11 @@ setup_sublime() {
   success "Symlinked Sublime Text to Google Drive"
 }
 
+generate_keys() {
+  ssh-keygen -t rsa
+  success "Created ssh key pair"
+}
+
 install_ohmyzsh
 install_dotfiles
 install_homebrew
@@ -151,3 +156,4 @@ setup_homebrew
 setup_nvim
 load_macos_defaults
 setup_sublime
+generate_keys
