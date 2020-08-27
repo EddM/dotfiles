@@ -117,32 +117,37 @@ install_homebrew() {
 
 setup_homebrew() {
   brew bundle --file=~/.homebrew/Brewfile
+  success "Bundled homebrew"
 }
 
 install_ohmyzsh() {
   sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+  success "Installed oh-my-zsh"
 }
 
 setup_nvim () {
   curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs \
     https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
   pip3 install --user neovim
+  success "Installed neovim"
 }
 
 load_macos_defaults() {
   sh ~/.macos
+  success "Loaded macOS defaults"
 }
 
 setup_sublime() {
   cd ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/
   rm -r User
   ln -s ~/Google\ Drive/Misc/Sublime\ Text\ 3/User
+  success "Symlinked Sublime Text to Google Drive"
 }
 
+install_ohmyzsh
 install_dotfiles
 install_homebrew
 setup_homebrew
-install_ohmyzsh
 setup_nvim
 load_macos_defaults
 setup_sublime
