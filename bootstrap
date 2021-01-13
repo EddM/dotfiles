@@ -116,6 +116,8 @@ install_homebrew() {
 }
 
 setup_homebrew() {
+  user "Please sign in to the Mac App Store before continuing... (press enter when done)"
+  read
   brew bundle --file=~/.homebrew/Brewfile
   success "Bundled homebrew"
 }

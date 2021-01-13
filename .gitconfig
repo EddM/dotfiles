@@ -18,3 +18,5 @@
 	required = true
 [commit]
 	gpgsign = false
+[pull]
+	rebase = true
