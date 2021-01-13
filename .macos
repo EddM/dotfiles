@@ -3,6 +3,17 @@ defaults write NSGlobalDomain NSTableViewDefaultSizeMode -int 1
 defaults write com.apple.finder WarnOnEmptyTrash -bool false
 defaults write com.apple.mail AddressesIncludeNameOnPasteboard -bool false
 defaults write NSGlobalDomain InitialKeyRepeat -int 30
+defaults write NSGlobalDomain AppleKeyboardUIMode -int 3
+
+# capslock to esc
+hidutil property --set '{
+  "UserKeyMapping": [
+    {
+      "HIDKeyboardModifierMappingSrc":0x700000039,
+      "HIDKeyboardModifierMappingDst":0x700000029
+    }
+  ]
+}'
 
 # iterm2
 defaults write com.googlecode.iterm2.plist PrefsCustomFolder -string "~/.dotfiles/.config"
