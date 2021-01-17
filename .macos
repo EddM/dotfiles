@@ -41,9 +41,6 @@ hidutil property --set '{
   ]
 }'
 
-chflags nohidden ~/Library && xattr -d com.apple.FinderInfo ~/Library
-sudo chflags nohidden /Volumes
-
 # iterm2
 defaults write com.googlecode.iterm2.plist PrefsCustomFolder -string "~/.dotfiles/.config"
 defaults write com.googlecode.iterm2.plist LoadPrefsFromCustomFolder -bool true

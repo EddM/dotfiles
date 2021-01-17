@@ -150,6 +150,8 @@ load_macos_defaults() {
 
 setup_sublime() {
   info "Symlinking Sublime Text to Google Drive..."
+  subl
+  sleep 5
   cd ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/
   rm -r User
   ln -s ~/Google\ Drive/Misc/Sublime\ Text\ 3/User
