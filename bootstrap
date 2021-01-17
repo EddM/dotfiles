@@ -160,6 +160,7 @@ generate_keys() {
   info "Generating SSH key pair..."
   ssh-keygen -t rsa
   success "Created ssh key pair"
+  success "Don't forget to add the key pair to GitHub!"
 }
 
 install_ohmyzsh
