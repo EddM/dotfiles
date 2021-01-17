@@ -112,6 +112,7 @@ install_dotfiles () {
 }
 
 install_homebrew() {
+  info "Installing homebrew..."
   ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 }
 
@@ -123,11 +124,18 @@ setup_homebrew() {
 }
 
 install_ohmyzsh() {
-  sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
-  success "Installed oh-my-zsh"
+  info "Installing oh-my-zsh..."
+
+  if [ ! -d ~/.oh-my-zsh ]; then
+    sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+    success "Installed oh-my-zsh"
+  else
+    info "oh-my-zsh already installed"
+  fi
 }
 
 setup_nvim () {
+  info "Installing neovim..."
   curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs \
     https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
   pip3 install --user neovim
@@ -135,11 +143,13 @@ setup_nvim () {
 }
 
 load_macos_defaults() {
+  info "Loading macOS defaults..."
   sh ~/.macos
   success "Loaded macOS defaults"
 }
 
 setup_sublime() {
+  info "Symlinking Sublime Text to Google Drive..."
   cd ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/
   rm -r User
   ln -s ~/Google\ Drive/Misc/Sublime\ Text\ 3/User
@@ -147,6 +157,7 @@ setup_sublime() {
 }
 
 generate_keys() {
+  info "Generating SSH key pair..."
   ssh-keygen -t rsa
   success "Created ssh key pair"
 }
