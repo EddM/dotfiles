@@ -1,9 +1,35 @@
 defaults write NSGlobalDomain com.apple.swipescrolldirection -bool false
 defaults write NSGlobalDomain NSTableViewDefaultSizeMode -int 1
-defaults write com.apple.finder WarnOnEmptyTrash -bool false
-defaults write com.apple.mail AddressesIncludeNameOnPasteboard -bool false
 defaults write NSGlobalDomain InitialKeyRepeat -int 30
 defaults write NSGlobalDomain AppleKeyboardUIMode -int 3
+defaults write NSGlobalDomain NSNavPanelExpandedStateForSaveMode -bool true
+defaults write NSGlobalDomain NSNavPanelExpandedStateForSaveMode2 -bool true
+defaults write NSGlobalDomain NSDocumentSaveNewDocumentsToCloud -bool false
+
+defaults write com.apple.LaunchServices LSQuarantine -bool false
+
+defaults write com.apple.finder WarnOnEmptyTrash -bool false
+defaults write com.apple.finder FXEnableExtensionChangeWarning -bool false
+defaults write com.apple.finder ShowPathbar -bool true
+defaults write com.apple.finder _FXSortFoldersFirst -bool true
+
+defaults write com.apple.mail AddressesIncludeNameOnPasteboard -bool false
+
+defaults write com.apple.desktopservices DSDontWriteNetworkStores -bool true
+defaults write com.apple.desktopservices DSDontWriteUSBStores -bool true
+
+defaults write com.apple.dock springboard-rows -int 6
+defaults write com.apple.dock springboard-columns -int 8
+defaults write com.apple.dock ResetLaunchPad -bool TRUE
+defaults write com.apple.dock tilesize -int 32
+
+defaults write com.apple.Safari IncludeDevelopMenu -bool true
+defaults write com.apple.Safari WebKitDeveloperExtrasEnabledPreferenceKey -bool true
+defaults write com.apple.Safari com.apple.Safari.ContentPageGroupIdentifier.WebKit2DeveloperExtrasEnabled -bool true
+defaults write com.apple.Safari SendDoNotTrackHTTPHeader -bool true
+defaults write NSGlobalDomain WebKitDeveloperExtras -bool true
+
+defaults -currentHost write com.apple.ImageCapture disableHotPlug -bool true
 
 # capslock to esc
 hidutil property --set '{
@@ -15,7 +41,12 @@ hidutil property --set '{
   ]
 }'
 
+chflags nohidden ~/Library && xattr -d com.apple.FinderInfo ~/Library
+sudo chflags nohidden /Volumes
+
 # iterm2
 defaults write com.googlecode.iterm2.plist PrefsCustomFolder -string "~/.dotfiles/.config"
 defaults write com.googlecode.iterm2.plist LoadPrefsFromCustomFolder -bool true
 defaults write com.googlecode.iterm2 PromptOnQuit -bool false
+
+killall Dock
