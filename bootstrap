@@ -173,6 +173,16 @@ create_work_directories() {
   success "Created ~/VMs"
 }
 
+prompt_for_reboot() {
+  success "All done! You should probably reboot now..."
+  user "Would you like to reboot now? [y/n]"
+  read -s -n 1 answer
+
+  if [ "$answer" == "y" ] ;then
+    sudo shutdown -r now
+  fi
+}
+
 install_ohmyzsh
 install_dotfiles
 install_homebrew
@@ -182,3 +192,4 @@ load_macos_defaults
 setup_sublime
 generate_keys
 create_work_directories
+prompt_for_reboot
