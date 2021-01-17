@@ -165,6 +165,14 @@ generate_keys() {
   success "Don't forget to add the key pair to GitHub!"
 }
 
+create_work_directories() {
+  info "Creating common work directories..."
+  mkdir ~/Projects
+  success "Created ~/Projects"
+  mkdir ~/VMs
+  success "Created ~/VMs"
+}
+
 install_ohmyzsh
 install_dotfiles
 install_homebrew
@@ -173,3 +181,4 @@ setup_nvim
 load_macos_defaults
 setup_sublime
 generate_keys
+create_work_directories

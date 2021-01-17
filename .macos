@@ -51,4 +51,5 @@ defaults write com.googlecode.iterm2.plist PrefsCustomFolder -string "~/.dotfile
 defaults write com.googlecode.iterm2.plist LoadPrefsFromCustomFolder -bool true
 defaults write com.googlecode.iterm2 PromptOnQuit -bool false
 
+killall Finder
 killall Dock
