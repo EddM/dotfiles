@@ -12,6 +12,9 @@ defaults write com.apple.finder WarnOnEmptyTrash -bool false
 defaults write com.apple.finder FXEnableExtensionChangeWarning -bool false
 defaults write com.apple.finder ShowPathbar -bool true
 defaults write com.apple.finder _FXSortFoldersFirst -bool true
+defaults write com.apple.finder NewWindowTarget -string "PfHm"
+defaults write com.apple.finder NewWindowTargetPath -string "file://${HOME}"
+defaults write com.apple.finger FXPreferredViewStyle -string "Nlsv"
 
 defaults write com.apple.mail AddressesIncludeNameOnPasteboard -bool false
 
@@ -30,6 +33,8 @@ defaults write com.apple.Safari SendDoNotTrackHTTPHeader -bool true
 defaults write NSGlobalDomain WebKitDeveloperExtras -bool true
 
 defaults -currentHost write com.apple.ImageCapture disableHotPlug -bool true
+
+chflags nohidden ~/Library
 
 # capslock to esc
 hidutil property --set '{
