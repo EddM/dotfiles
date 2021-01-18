@@ -57,6 +57,7 @@ defaults write com.knollsoft.Rectangle alternateDefaultShortcuts -bool false
 defaults write com.knollsoft.Rectangle hideMenubarIcon -bool true
 defaults write com.knollsoft.Rectangle launchOnLogin -bool true
 defaults write com.knollsoft.Rectangle SUEnableAutomaticChecks -bool true
+defaults write com.knollsoft.Rectangle windowSnapping -int 2
 
 killall Finder
 killall Dock
