@@ -29,6 +29,7 @@ brew "ghostscript"
 brew "git"
 brew "svn"
 brew "gsl"
+brew "htop"
 brew "imagemagick@6", link: true
 brew "libusb"
 brew "libusb-compat"
