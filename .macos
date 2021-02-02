@@ -35,6 +35,9 @@ defaults write NSGlobalDomain WebKitDeveloperExtras -bool true
 
 defaults -currentHost write com.apple.ImageCapture disableHotPlug -bool true
 
+defaults write com.culturedcode.ThingsMac OnboardingDidComplete -int 1
+defaults write com.culturedcode.ThingsMac CCDockCountType -int 3
+
 chflags nohidden ~/Library
 
 # capslock to esc
