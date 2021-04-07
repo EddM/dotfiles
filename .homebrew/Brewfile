@@ -4,6 +4,7 @@ tap "homebrew/core"
 tap "homebrew/bundle"
 tap "homebrew/cask"
 tap "homebrew/cask-fonts"
+tap "homebrew/cask-drivers"
 tap "heroku/brew"
 tap "adoptopenjdk/openjdk"
 tap "elastic/tap"
@@ -94,6 +95,8 @@ cask "meetingbar"
 cask "font-open-sans"
 cask "font-oswald"
 cask "font-inconsolata"
+
+cask "logitech-options"
 
 # mas "Microsoft Excel", id: 462058435
 # mas "Bear", id: 1091189122
