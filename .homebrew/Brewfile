@@ -67,6 +67,7 @@ brew "youtube-dl"
 brew "wireguard-tools"
 brew "qrencode"
 brew "iproute2mac"
+brew "ngrok"
 
 cask "1password"
 cask "appcleaner"
