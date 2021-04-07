@@ -9,7 +9,7 @@ tap "heroku/brew"
 tap "adoptopenjdk/openjdk"
 tap "elastic/tap"
 
-# brew "mas"
+# brew "mas" # due to incompatibility with ARM
 brew "autoconf"
 brew "autojump"
 brew "blueutil"
@@ -99,6 +99,7 @@ cask "font-inconsolata"
 
 cask "logitech-options"
 
+# removed because we can't install mas right now on arm
 # mas "Microsoft Excel", id: 462058435
 # mas "Bear", id: 1091189122
 # mas "Things 3", id: 904280696

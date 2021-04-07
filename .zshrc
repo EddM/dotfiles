@@ -46,6 +46,8 @@ bindkey '^[[Z' reverse-menu-complete
 bindkey -M menuselect '^M' .accept-line
 
 eval "$(rbenv init - --no-rehash)"
-export PATH="/usr/local/opt/node@8/bin:$PATH"
 
+export PATH="/usr/local/opt/node@8/bin:$PATH"
 export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
+export PUPPETEER_SKIP_CHROMIUM_DOWNLOAD=true
+export PUPPETEER_EXECUTABLE_PATH=`which chromium`
