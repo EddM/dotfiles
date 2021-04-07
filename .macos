@@ -64,3 +64,6 @@ defaults write com.knollsoft.Rectangle windowSnapping -int 2
 
 killall Finder
 killall Dock
+
+# file type associations
+duti -s com.sublimetext.3 .rb all

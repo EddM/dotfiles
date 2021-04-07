@@ -68,6 +68,7 @@ brew "wireguard-tools"
 brew "qrencode"
 brew "iproute2mac"
 brew "ngrok"
+brew "duti"
 
 cask "1password"
 cask "appcleaner"
