@@ -72,4 +72,4 @@ killall Finder
 killall Dock
 
 # file type associations
-duti -s com.sublimetext.3 .rb all
+duti -s com.sublimetext.4 .rb all
