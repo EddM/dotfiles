@@ -46,6 +46,7 @@ bindkey '^[[Z' reverse-menu-complete
 bindkey -M menuselect '^M' .accept-line
 
 eval "$(rbenv init - --no-rehash)"
+eval "$(nodenv init -)"
 
 export PATH="/usr/local/opt/node@8/bin:$PATH"
 export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH:$HOME/.cargo/bin"
