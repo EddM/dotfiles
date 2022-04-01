@@ -107,9 +107,16 @@ install_homebrew() {
 
   if ! command -v brew &> /dev/null; then
     /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
+    echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> ~/.zprofile
+    eval "$(/opt/homebrew/bin/brew shellenv)"
   else
     info "Homebrew already installed!"
   fi
+}
+
+install_rosetta() {
+  info "Installing Rosetta 2..."
+  sudo softwareupdate --install-rosetta
 }
 
 setup_homebrew() {
@@ -148,7 +155,7 @@ setup_sublime() {
   info "Symlinking Sublime Text to Google Drive..."
   subl
   sleep 5
-  cd ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/
+  cd ~/Library/Application\ Support/Sublime\ Text/Packages/
   rm -r User
   ln -s ~/Google\ Drive/Misc/Sublime\ Text\ 3/User
   success "Symlinked Sublime Text to Google Drive"
@@ -174,6 +181,30 @@ create_work_directories() {
   success "Created ~/VMs"
 }
 
+setup_dock() {
+  info "Setting up dock items..."
+  defaults delete com.apple.dock persistent-apps
+
+  declare -a dockitems=(
+    "/Applications/Safari.app"
+    "/System/Applications/Mail.app"
+    "/Applications/Things3.app"
+    "/System/Applications/Calendar.app"
+    "/Applications/Slack.app"
+    "/Applications/Bear.app"
+    "/Applications/Visual Studio Code.app"
+    "/Applications/iTerm.app"
+  )
+
+  for i in "${dockitems[@]}"
+  do
+    defaults write com.apple.dock persistent-apps -array-add "<dict><key>tile-data</key><dict><key>file-data</key><dict><key>_CFURLString</key><string>${i}</string><key>_CFURLStringType</key><integer>0</integer></dict></dict></dict>"
+  done
+
+  defaults write com.apple.dock persistent-others -array '()'
+  killall Dock
+}
+
 prompt_for_reboot() {
   success "All done! You should probably reboot now..."
   user "Would you like to reboot now? [y/n]"
@@ -184,6 +215,7 @@ prompt_for_reboot() {
   fi
 }
 
+install_rosetta
 install_ohmyzsh
 install_dotfiles
 install_homebrew
@@ -194,4 +226,5 @@ setup_sublime
 setup_rectangle
 generate_keys
 create_work_directories
+setup_dock
 prompt_for_reboot
