@@ -154,6 +154,11 @@ setup_sublime() {
   success "Symlinked Sublime Text to Google Drive"
 }
 
+setup_rectangle() {
+  info "Loading Rectangle defaults..."
+  sh ~/.rectangle
+}
+
 generate_keys() {
   info "Generating SSH key pair..."
   ssh-keygen -t rsa
@@ -186,6 +191,7 @@ setup_homebrew
 setup_nvim
 load_macos_defaults
 setup_sublime
+setup_rectangle
 generate_keys
 create_work_directories
 prompt_for_reboot

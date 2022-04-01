@@ -1,0 +1,28 @@
+open /Applications/Rectangle.app
+sleep 5
+killall Rectangle
+
+# set
+defaults write com.knollsoft.Rectangle alternateDefaultShortcuts -bool false
+defaults write com.knollsoft.Rectangle hideMenubarIcon -bool true
+defaults write com.knollsoft.Rectangle launchOnLogin -bool true
+defaults write com.knollsoft.Rectangle SUEnableAutomaticChecks -bool true
+defaults write com.knollsoft.Rectangle windowSnapping -int 2
+
+# clear unused shortcuts
+defaults write com.knollsoft.Rectangle bottomHalf '{}'
+defaults write com.knollsoft.Rectangle bottomLeft '{}'
+defaults write com.knollsoft.Rectangle bottomRight '{}'
+defaults write com.knollsoft.Rectangle larger '{}'
+defaults write com.knollsoft.Rectangle nextDisplay '{}'
+defaults write com.knollsoft.Rectangle previousDisplay '{}'
+defaults write com.knollsoft.Rectangle smaller '{}'
+defaults write com.knollsoft.Rectangle topHalf '{}'
+defaults write com.knollsoft.Rectangle topLeft '{}'
+defaults write com.knollsoft.Rectangle topRight '{}'
+
+# set shortcuts
+
+defaults write com.knollsoft.Rectangle leftHalf -dict keyCode 123 modifierFlags 1572864
+defaults write com.knollsoft.Rectangle rightHalf -dict keyCode 124 modifierFlags 1572864
+defaults write com.knollsoft.Rectangle maximizeHeight -dict keyCode 126 modifierFlags 1572864
