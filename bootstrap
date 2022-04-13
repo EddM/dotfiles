@@ -188,6 +188,7 @@ setup_dock() {
   declare -a dockitems=(
     "/Applications/Safari.app"
     "/System/Applications/Mail.app"
+    "/System/Applications/Messages.app"
     "/Applications/Things3.app"
     "/System/Applications/Calendar.app"
     "/Applications/Slack.app"
