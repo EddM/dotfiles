@@ -19,6 +19,8 @@ defaults write com.apple.finder NewWindowTargetPath -string "file://${HOME}"
 defaults write com.apple.finger FXPreferredViewStyle -string "Nlsv"
 
 defaults write com.apple.mail AddressesIncludeNameOnPasteboard -bool false
+defaults write com.apple.mail PlayMailSounds -bool false
+defaults write com.apple.mail NewMessagesSoundName -string ""
 
 defaults write com.apple.desktopservices DSDontWriteNetworkStores -bool true
 defaults write com.apple.desktopservices DSDontWriteUSBStores -bool true
