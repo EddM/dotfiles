@@ -37,6 +37,8 @@ defaults write com.apple.Safari com.apple.Safari.ContentPageGroupIdentifier.WebK
 defaults write com.apple.Safari SendDoNotTrackHTTPHeader -bool true
 defaults write NSGlobalDomain WebKitDeveloperExtras -bool true
 
+defaults write com.apple.Spotlight MenuItemHidden -int 1
+
 defaults -currentHost write com.apple.ImageCapture disableHotPlug -bool true
 
 defaults write com.culturedcode.ThingsMac OnboardingDidComplete -int 1
