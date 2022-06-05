@@ -38,6 +38,7 @@ defaults write com.apple.Safari SendDoNotTrackHTTPHeader -bool true
 defaults write NSGlobalDomain WebKitDeveloperExtras -bool true
 
 defaults write com.apple.Spotlight MenuItemHidden -int 1
+defaults write com.apple.controlcenter "NSStatusItem Visible NowPlaying" -int 0
 
 defaults -currentHost write com.apple.ImageCapture disableHotPlug -bool true
 
