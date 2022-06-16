@@ -31,6 +31,10 @@ alias be='bundle exec '
 alias grep='grep --color -n'
 alias ls='ls -Gpa'
 
+function gcbu() {
+  gcb $USER/$1
+}
+
 bindkey '^[[Z' reverse-menu-complete
 bindkey -M menuselect '^M' .accept-line
 
