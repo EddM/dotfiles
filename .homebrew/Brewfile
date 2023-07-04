@@ -2,7 +2,6 @@ cask_args appdir: "/Applications"
 
 tap "homebrew/core"
 tap "homebrew/bundle"
-tap "homebrew/cask-fonts"
 tap "heroku/brew"
 tap "adoptopenjdk/openjdk"
 tap "elastic/tap"
@@ -89,12 +88,9 @@ cask "1password"
 cask "adoptopenjdk/openjdk/adoptopenjdk8-jre"
 cask "appcleaner"
 cask "backblaze"
-cask "dash"
+cask "blender"
 cask "docker"
 cask "firefox"
-cask "font-inconsolata"
-cask "font-open-sans"
-cask "font-oswald"
 cask "google-drive"
 cask "google-chrome"
 cask "handbrake"
@@ -105,7 +101,6 @@ cask "minecraft"
 cask "obsidian"
 cask "openemu"
 cask "rectangle"
-cask "sketch"
 cask "slack"
 cask "steam"
 cask "transmit"
@@ -115,9 +110,6 @@ cask "visual-studio-code"
 cask "vlc"
 cask "zoom"
 
-mas "Color Picker", id: 641027709
 mas "Microsoft Excel", id: 462058435
-mas "Patterns", id: 429449079
-mas "SnippetsLab", id: 1006087419
 mas "Things 3", id: 904280696
 mas "Tailscale", id: 1475387142
