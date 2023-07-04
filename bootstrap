@@ -179,6 +179,7 @@ setup_dock() {
     "/Applications/Safari.app"
     "/System/Applications/Mail.app"
     "/System/Applications/Messages.app"
+    "/System/Applications/Photos.app"
     "/Applications/Things3.app"
     "/System/Applications/Calendar.app"
     "/Applications/Slack.app"
