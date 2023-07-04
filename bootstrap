@@ -151,16 +151,6 @@ load_macos_defaults() {
   success "Loaded macOS defaults"
 }
 
-setup_sublime() {
-  info "Symlinking Sublime Text to Google Drive..."
-  subl
-  sleep 5
-  cd ~/Library/Application\ Support/Sublime\ Text/Packages/
-  rm -r User
-  ln -s ~/Google\ Drive/Misc/Sublime\ Text\ 3/User
-  success "Symlinked Sublime Text to Google Drive"
-}
-
 setup_rectangle() {
   info "Loading Rectangle defaults..."
   sh ~/.rectangle
@@ -223,7 +213,6 @@ install_homebrew
 setup_homebrew
 setup_nvim
 load_macos_defaults
-setup_sublime
 setup_rectangle
 generate_keys
 create_work_directories

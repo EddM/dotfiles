@@ -76,6 +76,3 @@ defaults write com.apple.dock wvous-bl-corner -int 0
 
 killall Finder
 killall Dock
-
-# file type associations
-duti -s com.sublimetext.4 .rb all
