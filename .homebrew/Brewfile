@@ -116,3 +116,4 @@ cask "zoom"
 mas "Microsoft Excel", id: 462058435
 mas "Things 3", id: 904280696
 mas "Tailscale", id: 1475387142
+mas "Xcode", id: 497799835
