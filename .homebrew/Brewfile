@@ -9,6 +9,8 @@ tap "gromgit/new-life"
 
 brew "autoconf"
 brew "autojump"
+brew "aws-cli"
+brew "aws-sam-cli"
 brew "bastet"
 brew "blueutil"
 brew "coreutils"
