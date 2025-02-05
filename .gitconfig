@@ -4,6 +4,7 @@
 	signingkey = FC4755723D3AAA43
 [core]
   excludesfile = ~/.gitignore
+	editor = nvim
 [push]
   default = upstream
 [color]
