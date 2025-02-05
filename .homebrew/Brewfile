@@ -95,6 +95,7 @@ cask "1password"
 cask "appcleaner"
 cask "arq"
 cask "backblaze"
+cask "chatgpt"
 cask "cyberduck"
 cask "firefox"
 cask "google-drive"
@@ -118,6 +119,7 @@ cask "vlc"
 cask "zoom"
 
 mas "Microsoft Excel", id: 462058435
+mas "Overcast", id: 888422857
 mas "Things 3", id: 904280696
 mas "Tailscale", id: 1475387142
 mas "Xcode", id: 497799835
