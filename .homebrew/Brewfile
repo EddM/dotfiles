@@ -81,6 +81,7 @@ brew "svn"
 brew "thrift"
 brew "tmux"
 brew "vale"
+brew "virtualenv"
 brew "watchman"
 brew "wget"
 brew "wireguard-tools"
@@ -117,6 +118,7 @@ cask "visual-studio-code"
 cask "vlc"
 cask "zoom"
 
+mas "1Password for Safari", id: 1569813296
 mas "Microsoft Excel", id: 462058435
 mas "Overcast", id: 888422857
 mas "Things 3", id: 904280696
