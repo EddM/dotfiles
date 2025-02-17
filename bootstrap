@@ -89,7 +89,7 @@ install_dotfiles () {
     link_file "$src" "$dst"
   done
 
-  dotdirs=(.config .oh-my-zsh .homebrew)
+  dotdirs=(.config .oh-my-zsh .homebrew .scripts)
 
   for dotdir in "${dotdirs[@]}"; do
     fulldotdir=~/.dotfiles/$dotdir
@@ -202,6 +202,10 @@ setup_dock() {
   killall Dock
 }
 
+setup_scripts() {
+  sh ./.scripts/setup.sh
+}
+
 prompt_for_reboot() {
   success "All done! You should probably reboot now..."
   user "Would you like to reboot now? [y/n]"
@@ -223,4 +227,5 @@ setup_rectangle
 generate_keys
 create_work_directories
 setup_dock
+setup_scripts
 prompt_for_reboot
