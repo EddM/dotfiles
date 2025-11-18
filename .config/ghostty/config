@@ -50,7 +50,7 @@
 
 font-family = Menlo
 font-size = 14
-adjust-cell-height = 8
+adjust-cell-height = 12
 adjust-cell-width = 0
 
 theme = Dracula
