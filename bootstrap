@@ -206,6 +206,12 @@ setup_scripts() {
   sh ./.scripts/setup.sh
 }
 
+setup_ghostty() {
+  mkdir -p "~/Library/Application Support/com.mitchellh.ghostty/"
+  rm "~/Library/Application Support/com.mitchellh.ghostty/config"
+  ln -s ~/.dotfiles/.config/ghostty/config "~/Library/Application Support/com.mitchellh.ghostty/config"
+}
+
 prompt_for_reboot() {
   success "All done! You should probably reboot now..."
   user "Would you like to reboot now? [y/n]"
@@ -222,6 +228,7 @@ install_dotfiles
 install_homebrew
 setup_homebrew
 setup_nvim
+setup_ghostty
 load_macos_defaults
 setup_rectangle
 generate_keys
