@@ -64,6 +64,6 @@ window-padding-y = 8,4
 window-padding-x = 8
 
 macos-titlebar-style = native
-macos-icon = holographic
+macos-icon = xray
 
 shell-integration-features = no-cursor
