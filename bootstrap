@@ -190,7 +190,7 @@ setup_dock() {
     "/Applications/Obsidian.app"
     "/Applications/Insomnia.app"
     "/Applications/Visual Studio Code.app"
-    "/Applications/iTerm.app"
+    "/Applications/Ghostty.app"
   )
 
   for i in "${dockitems[@]}"
