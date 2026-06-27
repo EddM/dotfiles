@@ -43,3 +43,5 @@ eval "$(nodenv init -)"
 
 export PATH="/usr/local/opt/node@8/bin:$PATH"
 export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH:$HOME/.cargo/bin"
+# Created by `pipx` on 2026-02-22 13:58:00
+export PATH="$PATH:/Users/edd/.local/bin"
