@@ -44,8 +44,8 @@ btle = true
 bluetooth = false
 
 [devices."direct:046d:b042:serial:2540zac1zyq8".bindings]
-ThumbwheelScrollUp = "NextTab"
-ThumbwheelScrollDown = "PrevTab"
+ThumbwheelScrollUp = "PrevTab"
+ThumbwheelScrollDown = "NextTab"
 
 [devices."direct:046d:b042:serial:2540zac1zyq8".identity.capabilities]
 buttons = true
