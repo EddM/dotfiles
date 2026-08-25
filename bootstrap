@@ -212,6 +212,12 @@ setup_ghostty() {
   ln -s $HOME/.dotfiles/.config/ghostty/config "$HOME/Library/Application Support/com.mitchellh.ghostty/config"
 }
 
+setup_openlogi() {
+  mkdir -p "$HOME/.config/openlogi"
+  rm -f "$HOME/.config/openlogi/config.toml"
+  ln -s "$HOME/.dotfiles/.config/openlogi/config.toml" "$HOME/.config/openlogi/config.toml"
+}
+
 prompt_for_reboot() {
   success "All done! You should probably reboot now..."
   user "Would you like to reboot now? [y/n]"
@@ -229,6 +235,7 @@ install_homebrew
 setup_homebrew
 setup_nvim
 setup_ghostty
+setup_openlogi
 load_macos_defaults
 setup_rectangle
 generate_keys

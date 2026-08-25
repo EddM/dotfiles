@@ -1,0 +1,58 @@
+schema_version = 4
+
+[app_settings]
+launch_at_login = false
+check_for_updates = true
+auto_install_updates = false
+update_prompt_seen = true
+show_in_menu_bar = false
+capture_mouse_events = true
+app_icon = "openlogi"
+auto_download_assets = true
+asset_source = "automatic"
+thumbwheel_sensitivity = 14
+appearance = "dark"
+
+[devices]
+
+[devices."direct:046d:b042:serial:2540zac1zyq8".identity]
+display_name = "MX Master 4"
+codename = "MX Master 4"
+kind = "mouse"
+
+[devices."direct:046d:b042:serial:2540zac1zyq8".identity.model_info]
+entity_count = 4
+unit_id = [
+    0,
+    0,
+    0,
+    0,
+]
+model_ids = [
+    45122,
+    0,
+    0,
+]
+extended_model_id = 5
+
+[keyboard]
+
+[devices."direct:046d:b042:serial:2540zac1zyq8".identity.model_info.transports]
+usb = false
+equad = false
+btle = true
+bluetooth = false
+
+[devices."direct:046d:b042:serial:2540zac1zyq8".bindings]
+ThumbwheelScrollUp = "NextTab"
+ThumbwheelScrollDown = "PrevTab"
+
+[devices."direct:046d:b042:serial:2540zac1zyq8".identity.capabilities]
+buttons = true
+pointer = true
+lighting = false
+scroll_inversion = true
+hires_wheel = true
+thumbwheel = true
+haptic_feedback = true
+haptic_panel = true
